@@ -1,0 +1,163 @@
+$done-color: #00A04A;
+$todo-color: #FF8A00;
+$in-progress-color: #0042FF;
+$waiting-color: #DB00FF;
+$waiting-for-repair-color: #FF014D;
+
+$canban-border-color: #DBE4E8;
+
+.canban {
+    &--container {
+
+        &-header {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            letter-spacing: 0.1px;
+            color: #000000;
+            padding-bottom: 5px;
+
+            &.todo {
+                border-bottom: 5px solid $todo-color;
+            }
+
+            &.in-progress {
+                border-bottom: 5px solid $in-progress-color;
+            }
+
+            &.waiting {
+                border-bottom: 5px solid $waiting-color;
+            }
+
+            &.waiting-for-repair {
+                border-bottom: 5px solid $waiting-for-repair-color;
+            }
+
+            &.done {
+                border-bottom: 5px solid $done-color;
+            }
+        }
+    }
+
+    &--container:not(:first-child) {
+        border-left: 1px dashed $canban-border-color;
+    }
+
+    &--container:not(:last-child) {
+        border-right: 1px dashed $canban-border-color;
+    }
+
+
+    &--card {
+        padding: 12px;
+
+        &-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 4px;
+            border-bottom: 1px solid $canban-border-color;
+        }
+
+        &-data {
+            padding: 4px 0;
+        }
+
+        &-id {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 11px;
+            line-height: 16px;
+            letter-spacing: 0.5px;
+            color: #6F787C;
+        }
+
+        &-name {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.1px;
+            color: #191C1D;
+            border-bottom: 1px solid $canban-border-color;
+        }
+
+        &-park {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 20px;
+            letter-spacing: 0.5px;
+            color: #6F787C;
+            border-bottom: 1px solid $canban-border-color;
+        }
+
+        &-responsible {
+            border-bottom: 1px solid $canban-border-color;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 20px;
+            letter-spacing: 0.5px;
+            color: #6F787C;
+            padding: 0 0px 4px;
+        }
+
+        &-type,
+        &-deadline,
+        &-estimated {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 20px;
+            letter-spacing: 0.5px;
+            color: #6F787C;
+            padding: 4px 0;
+            border-bottom: 1px solid $canban-border-color;
+        }
+
+        &-estimated {
+            border-bottom: none !important;
+            padding-bottom: 0;
+        }
+
+        .priority--text {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            letter-spacing: 0.4px;
+            color: #191C1D;
+        }
+
+        .status--text {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 20px;
+            letter-spacing: 0.5px;
+
+            &.todo {
+                color: $todo-color;
+            }
+
+            &.in_progress {
+                color: $in-progress-color;
+            }
+
+            &.waiting {
+                color: $waiting-color;
+            }
+
+            &.waiting_for_repair {
+                color: $waiting-for-repair-color
+            }
+
+            &.done {
+                color: $done-color;
+            }
+        }
+    }
+}

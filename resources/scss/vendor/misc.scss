@@ -1,0 +1,63 @@
+#misc {
+  
+  overflow: hidden;
+
+  .page-title {
+    margin-top: 5.25rem;
+  }
+
+  .misc-character {
+    margin-bottom: 3.313rem;
+    margin-top: 5rem;
+  }
+
+  .misc-mask,
+  .misc-tree {
+    position: absolute;
+  }
+
+  .misc-mask {
+    bottom: 0;
+    width: 100%;
+  }
+
+  .misc-tree {
+    height: 226px;
+    max-width: 300px;
+    left: 0;
+    bottom: 8%;
+  }
+
+  .misc-input-width {
+    max-width: 15.125rem;
+  }
+}
+
+@media (max-width: 550px) {
+  #misc {
+    .page-title {
+      margin-top: 3rem;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .misc-tree,
+  .misc-mask {
+    display: none;
+  }
+}
+
+.ql-toolbar.ql-snow{
+  border: 1px solid rgba(0,0,0,.38)!important;
+  border-top-right-radius: 4px!important;
+  border-top-left-radius: 4px!important;
+  border-bottom: 0px!important;
+}
+
+.ql-container.ql-snow{
+  border-top: 0px!important;
+  border: 1px solid rgba(0,0,0,.38)!important;
+  border-bottom-left-radius: 4px!important;
+  border-bottom-right-radius: 4px!important;
+}

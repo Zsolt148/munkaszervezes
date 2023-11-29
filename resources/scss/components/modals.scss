@@ -1,0 +1,217 @@
+.modal {
+    &-header {
+        height: 55px;
+        padding: 20px 24px 15px;
+
+        .btn-close {
+            font-weight: bold;
+            font-size: 12px;
+            color: black;
+        }
+    }
+
+    &--task {
+
+        &-title {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.25px;
+            color: #40484B;
+        }
+
+        &-id {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.1px;
+            color: #40484B;
+        }
+
+        &-name {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 28px;
+            color: #1C1B1F;
+            margin-top: 8px;
+        }
+    }
+
+    &--body {
+        padding: 24px
+    }
+
+    &--title {
+        @include flex-center();
+        font-size: 14px;
+        margin-bottom: 0 !important;
+        line-height: 20px;
+        letter-spacing: 0.1px;
+        color: #40484b;
+        font-weight: 500;
+    }
+
+    &-subtitle {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.1px;
+        color: #40484b;
+    }
+
+    &-dialog {
+        border-radius: 8px;
+    }
+
+    &-divider {
+        height: 4px;
+        width: 4px;
+        margin: 0 6px;
+        background-color: #6F787C;
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    &-body {
+        padding: 32px 24px 0px;
+
+        &-notification {
+            padding: 20px 24px 0px;
+        }
+    }
+
+    &-content {
+        box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15),
+            0px 1px 3px rgba(0, 0, 0, 0.3);
+        background: $white;
+        border-radius: 8px;
+        border: none !important;
+    }
+
+    &-footer {
+        @include flex-between;
+        border: 0 !important;
+        padding: 32px 22px 22px;
+    }
+
+    &-label {
+        font-size: 16px;
+        color: $black;
+        margin: 32px 0 0 0;
+        line-height: 24px;
+        letter-spacing: 0.1px;
+
+        &-bigger {
+            font-size: 22px;
+            line-height: 28px;
+            color: #1c1b1f;
+            margin: 0px 0px 8px 0;
+        }
+    }
+
+    .notification__title {
+        display: flex;
+
+    }
+
+    & .inverter {
+        font-size: 14px;
+        color: $black;
+        display: flex;
+        align-items: center;
+        margin: 0;
+        margin-bottom: 32px;
+        line-height: 20px;
+        letter-spacing: 0.1px;
+
+        p {
+            @include flex-center();
+            margin: 0
+        }
+    }
+
+    & .solution {
+        font-size: 14px;
+        background: #eff1f2;
+        border-radius: 4px;
+        padding: 18px;
+        line-height: 20px;
+        letter-spacing: 0.25px;
+        color: #191c1d;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    .park__history {
+        @include flex-column();
+        @include flex-center();
+        background: #dcf5fe;
+        text-align: center;
+        border-radius: 4px;
+        padding: 10px;
+        margin-bottom: 32px;
+
+        h2 {
+            line-height: 20px;
+            letter-spacing: 0.1px;
+        }
+
+        p {
+            letter-spacing: 0.4px;
+            color: #40484b;
+            margin-bottom: 4px;
+        }
+    }
+
+    .park__details {
+        &-section {
+            margin-bottom: 9px;
+        }
+
+        &-name {
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.25px;
+            color: #191c1d;
+            margin-bottom: 4px;
+        }
+
+        &-location {
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.25px;
+            color: #6f787c;
+            margin: 0;
+        }
+
+        &-link {
+            font-size: 14px;
+            display: block;
+            line-height: 20px;
+            letter-spacing: 0.25px;
+            color: #16b1ff;
+            margin-bottom: 4px;
+            text-decoration: none;
+        }
+    }
+}
+
+.notification-modal {
+    .modal-footer {
+        padding-top: 12px;
+    }
+}
+
+.modal--bold-text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #191C1D;
+}

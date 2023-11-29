@@ -1,0 +1,88 @@
+.dudp__wrapper[data-theme="probox"] .dudp__calendar-header {
+    background-color: $blue_primary;
+}
+
+.dudp__wrapper[data-theme="probox"]
+    .dudp__calendar
+    .dudp__cal-week
+    .dudp__date.current {
+    color: $blue_primary;
+}
+
+.dudp__wrapper[data-theme="probox"]
+    .dudp__calendar
+    .dudp__cal-week
+    .dudp__date.in-range,
+.dudp__wrapper[data-theme="probox"]
+    .dudp__calendar
+    .dudp__cal-week
+    .dudp__date.range-from,
+.dudp__wrapper[data-theme="probox"]
+    .dudp__calendar
+    .dudp__cal-week
+    .dudp__date.range-to {
+    background-color: rgba(48, 63, 159, 0.2);
+}
+
+.dudp__wrapper[data-theme="probox"]
+    .dudp__calendar
+    .dudp__cal-week
+    .dudp__date.selected:before,
+.dudp__wrapper[data-theme="probox"]
+    .dudp__calendar
+    .dudp__cal-week
+    .dudp__date.range-from:before,
+.dudp__wrapper[data-theme="probox"]
+    .dudp__calendar
+    .dudp__cal-week
+    .dudp__date.range-to:before {
+    background-color: $blue_primary;
+}
+
+.dudp__wrapper[data-theme="probox"]
+    .dudp__calendar
+    .dudp__cal-week
+    .dudp__date.selected:hover:before,
+.dudp__wrapper[data-theme="probox"]
+    .dudp__calendar
+    .dudp__cal-week
+    .dudp__date.range-from:hover:before,
+.dudp__wrapper[data-theme="probox"]
+    .dudp__calendar
+    .dudp__cal-week
+    .dudp__date.range-to:hover:before {
+    background-color: $blue_primary;
+}
+
+.dudp__wrapper[data-theme="probox"] .dudp__buttons .dudp__button,
+.dudp__wrapper[data-theme="probox"] .dudp__months-view .dudp__month.selected,
+.dudp__wrapper[data-theme="probox"] .dudp__years-view .dudp__year.selected {
+    color: $blue_primary;
+}
+
+.timepicker {
+    font-size: 14px;
+    background: #cee6ef;
+    padding: 4px 10px;
+    border-radius: 4px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1px;
+    color: #16b1ff;
+    outline: none;
+    border: none;
+
+    &::placeholder {
+        font-size: 14px;
+        background: #cee6ef;
+        border-radius: 4px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.1px;
+        color: #16b1ff;
+        outline: none;
+        border: none;
+    }
+}

@@ -1,0 +1,32 @@
+.chips {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+    box-sizing: border-box;
+    border-radius: 99px;
+    padding: 2px 8px;
+    text-decoration: none;
+    
+    &-fault {
+        color: #ba1b1b;
+        background: #ffdad4;
+        border: 1px solid #ba1b1b;
+        &:hover{
+            text-decoration: none;
+            color: #ba1b1b;
+        }
+    }
+    &-warning {
+        color: #896C3F;
+        background: #fcf8e4;
+        border: 1px solid #896c3f;
+        &:hover{
+            text-decoration: none;
+            color: #896C3F;
+        }
+    }
+}

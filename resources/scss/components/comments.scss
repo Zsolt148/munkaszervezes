@@ -1,0 +1,86 @@
+.comment {
+    &--container {
+        max-height: 800px;
+        overflow: scroll;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    &--card {
+        padding: 15px 18px !important;
+    }
+
+    &--list {}
+
+    &--actions {
+        margin-top: 10px;
+        display: flex;
+        gap: 5px;
+        justify-content: end;
+    }
+
+    &--header {
+        display: flex;
+        align-items: center;
+        padding-top: 0 !important;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #DBE4E8;
+    }
+
+    &--name {
+        cursor: pointer;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.1px;
+        color: #000000;
+        margin-bottom: 0 !important;
+        margin-left: 8px;
+    }
+
+    &--id {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.1px;
+        color: #6F787C;
+        margin-bottom: 0 !important;
+        margin-right: 8px;
+    }
+
+    &--time {
+        margin-left: auto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.1px;
+        color: #6F787C;
+    }
+
+    &--avatar {
+        align-self: start !important;
+    }
+
+    &--body {
+        overflow: auto;
+        white-space: pre-wrap !important;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        color: #40484B;
+        padding-top: 18px!important;
+
+        p{
+            margin-bottom: 0px!important;
+        }
+    }
+}

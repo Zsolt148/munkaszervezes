@@ -1,0 +1,33 @@
+$badge-with: 14px;
+$badge-height: 14px;
+
+.badge {
+    @include flex-center;
+    font-size: 11px;
+    background: $red_primary;
+    width: $badge-with;
+    height: $badge-height;
+    position: absolute;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    border-radius: 100%;
+    right: 17px;
+    top: 13px;
+}
+
+
+.badge__small{
+    @include flex-center;
+    font-size: 11px;
+    background: $red_primary;
+    width: calc($badge-with / 2);
+    height: calc($badge-height / 2);
+    position: absolute;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    border-radius: 100%;
+    right: 17px;
+    top: 13px;
+}

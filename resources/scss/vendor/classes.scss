@@ -1,0 +1,203 @@
+@import "mixins";
+
+// ————————————————————————————————————
+//* ——— Color
+// ————————————————————————————————————
+
+
+.v-application.theme--light .v-tabs:not(.v-tabs--vertical){
+    box-shadow: none!important;
+}
+.v-expansion-panel {
+    border: thin solid rgba(0,0,0,.12);
+}
+
+.main--logo{
+    max-height: 100px!important;
+    max-width: 50px!important;
+}
+
+.preview--content{
+    img{
+        width: 100%!important;
+        object-fit: cover;
+    }
+    iframe{
+        width: 100%!important;
+    }
+}
+
+
+.socials{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 15px;
+    margin-bottom: 15px;
+}
+
+// ql
+
+.ql-toolbar.ql-snow{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: thin solid #9e9e9e;
+}
+
+.google--preview-title{
+    color: #1a0dab;
+    font-size: 1.125rem;
+    line-height: 1.3125rem;
+    margin-bottom: 0.125rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.google--preview-url{
+    color: #006621;
+    line-height: 1rem;
+    font-size: 1rem;
+    margin-bottom: 0.125rem;
+}
+.google--preview-description{
+    color: #545454;
+    line-height: 1.125rem;
+    font-size: .8125rem;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+.v-slide-group__wrapper{
+    border: thin solid rgba(0,0,0,.12);
+    border-radius: 3px;
+}
+
+.v-footer{
+    border-top: thin solid rgba(0,0,0,.12)!important;
+}
+
+.primary-breadcrumb{
+    cursor: pointer;
+}
+
+.v-breadcrumbs{
+    padding-left: 0!important;
+}
+
+.fullscreen-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem;
+    height: calc(100vh - 120px);
+}
+
+.theme--dark.v-tabs-items{
+    background: transparent!important;
+}
+
+
+.bg-gradient-primary {
+    color: white !important;
+
+    i {
+        color: white !important;
+    }
+}
+
+// ————————————————————————————————————
+//* ——— Grid
+// ————————————————————————————————————
+
+// Card match height
+.row.match-height {
+    .v-card {
+        height: 100%;
+    }
+}
+
+// ————————————————————————————————————
+//* ——— Typography
+// ————————————————————————————————————
+
+//
+//* ——— Font Sizes ——————————————————
+//
+
+.text-xs {
+    font-size: 0.75rem !important;
+    line-height: 1rem !important;
+}
+
+.text-sm {
+    font-size: 0.875rem !important;
+    line-height: 1.25rem !important;
+}
+
+.text-base {
+    font-size: 1rem !important;
+    line-height: 1.5rem !important;
+}
+
+.text-lg {
+    font-size: 1.125rem !important;
+    line-height: 1.75rem !important;
+}
+
+.text-xl {
+    font-size: 1.25rem !important;
+    line-height: 1.75rem !important;
+}
+
+.text-2xl {
+    font-size: 1.5rem !important;
+    line-height: 2rem !important;
+}
+
+.text-3xl {
+    font-size: 1.875rem !important;
+    line-height: 2.25rem !important;
+}
+
+.text-4xl {
+    font-size: 2.25rem !important;
+    line-height: 2.5rem !important;
+}
+
+.text-5xl {
+    font-size: 3rem !important;
+    line-height: 1 !important;
+}
+
+//
+//* ——— Font Size ——————————————————
+//
+
+.font-weight-semibold {
+    font-weight: 600 !important;
+}
+
+// ————————————————————————————————————
+//* ——— Misc
+// ————————————————————————————————————
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.position-absolute {
+    position: absolute;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.h-full {
+    height: 100%;
+}
